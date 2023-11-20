@@ -52,4 +52,37 @@ public class TarefaController : ControllerBase
             return BadRequest(e.Message);
         }
     }
+     [HttpPut]
+    [Route("alterar/{id}")]
+    public IActionResult Alterar([FromRoute] int id,
+        [FromBody] Tarefa tarefa)
+    {
+        try
+        {
+            //Expressões lambda
+            Tarefa? tarefaCadastrada =
+                _context.Tarefas.FirstOrDefault(x => x.TarefaId == id);
+            if (tarefaCadastrada != null)
+            {
+                Categoria? categoria =
+                    _context.Categorias.Find(tarefa.CategoriaId);
+                if (categoria == null)
+                {
+                    return NotFound();
+                }
+                tarefaCadastrada.Categoria = categoria;
+                tarefaCadastrada.Titulo = tarefa.Titulo;
+                tarefaCadastrada.Descricao = tarefa.Descricao;
+                tarefaCadastrada.CriadoEm = tarefa.CriadoEm;
+                _context.Tarefas.Update(tarefaCadastrada);
+                _context.SaveChanges();
+                return Ok();
+            }
+            return NotFound();
+        }
+        catch (Exception e)
+        {
+            return BadRequest(e.Message);
+        }
+    }
 }
