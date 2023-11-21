@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Amaan\\Downloads\\API\\API\\API.csproj": {}
+    "C:\\Users\\Amaan\\OneDrive\\Área de Trabalho\\Prova2\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Amaan\\Downloads\\API\\API\\API.csproj": {
+    "C:\\Users\\Amaan\\OneDrive\\Área de Trabalho\\Prova2\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Amaan\\Downloads\\API\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\Amaan\\OneDrive\\Área de Trabalho\\Prova2\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\Amaan\\Downloads\\API\\API\\API.csproj",
+        "projectPath": "C:\\Users\\Amaan\\OneDrive\\Área de Trabalho\\Prova2\\API\\API.csproj",
         "packagesPath": "C:\\Users\\Amaan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Amaan\\Downloads\\API\\API\\obj\\",
+        "outputPath": "C:\\Users\\Amaan\\OneDrive\\Área de Trabalho\\Prova2\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Amaan\\AppData\\Roaming\\NuGet\\NuGet.Config"
